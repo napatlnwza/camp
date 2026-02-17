@@ -1,0 +1,105 @@
+body {
+    font-family: "Noto Sans Thai", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(#1B61E4, #1BC6E4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    width: 90%;
+    max-width: 1000px;
+}
+
+/* กล่องเนื้อหา */
+.content {
+    flex: 2;
+    background-color: #E807F8;
+    border: 3px solid #2AB1D5;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Welcome */
+.welcome {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.wel {
+    font-size: 2.5rem;
+}
+
+.pic {
+    width: 85px;
+    border-radius: 100px;
+}
+
+/* ข้อความ */
+.text h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.text h5 {
+    margin-top: 1rem;
+    opacity: 0.8;
+}
+
+/* ฟอร์ม */
+.input {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+}
+
+/* select */
+#seenum {
+    width: 100%;
+    max-width: 220px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid #00A0F3;
+}
+
+/* ปุ่ม */
+.button {
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+    border: 2px solid #0000FF;
+    background-color: #00A0F3;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+/* 📱 มือถือ */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .wel {
+        font-size: 2rem;
+    }
+
+    .text h2 {
+        font-size: 1rem;
+    }
+}
